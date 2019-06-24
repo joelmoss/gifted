@@ -4232,3 +4232,495 @@ Processing by AuthorsController#index as HTML
 Completed 200 OK in 10ms (Views: 9.3ms)
 
 
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from <top (required)> at /Users/joelmoss/dev/gifted/test/fake_app/fake_app.rb:24)
+Started GET "/authors" for 127.0.0.1 at 2019-06-24 19:53:38 +0100
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb
+  Rendered authors/index.html.erb (5.1ms)
+Completed 500 Internal Server Error in 10ms
+
+
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from <top (required)> at /Users/joelmoss/dev/gifted/test/fake_app/fake_app.rb:24)
+Started GET "/authors" for 127.0.0.1 at 2019-06-24 19:55:12 +0100
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb
+  Rendered books/_book.html.erb (0.4ms)
+  Rendered authors/index.html.erb (8.5ms)
+Completed 200 OK in 13ms (Views: 10.6ms)
+
+
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from <top (required)> at /Users/joelmoss/dev/gifted/test/fake_app/fake_app.rb:24)
+Started GET "/authors" for 127.0.0.1 at 2019-06-24 19:55:29 +0100
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb
+  Rendered books/_book.html.erb (0.5ms)
+  Rendered authors/index.html.erb (10.3ms)
+Completed 200 OK in 15ms (Views: 12.8ms)
+
+
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from <top (required)> at /Users/joelmoss/dev/gifted/test/fake_app/fake_app.rb:24)
+Started GET "/authors/1" for 127.0.0.1 at 2019-06-24 19:55:52 +0100
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering authors/show.html.erb
+  Rendered authors/show.html.erb (23.6ms)
+Completed 200 OK in 34ms (Views: 26.7ms)
+
+
+Started GET "/authors/1/books" for 127.0.0.1 at 2019-06-24 19:55:53 +0100
+Processing by BooksController#index as HTML
+  Parameters: {"author_id"=>"1"}
+  Rendering books/index.html.erb
+  Rendered books/index.html.erb (1.1ms)
+Completed 200 OK in 4ms (Views: 2.3ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2019-06-24 19:55:53 +0100
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb
+  Rendered books/_book.html.erb (0.2ms)
+  Rendered authors/index.html.erb (2.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2019-06-24 19:55:53 +0100
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb
+  Rendered books/_book.html.erb (0.3ms)
+  Rendered authors/index.html.erb (2.0ms)
+Completed 200 OK in 3ms (Views: 2.9ms)
+
+
+Started GET "/authors?variable_type=array" for 127.0.0.1 at 2019-06-24 19:55:53 +0100
+Processing by AuthorsController#index as HTML
+  Parameters: {"variable_type"=>"array"}
+  Rendering authors/index.html.erb
+  Rendered books/_book.html.erb (0.2ms)
+  Rendered authors/index.html.erb (1.8ms)
+Completed 200 OK in 3ms (Views: 2.8ms)
+
+
+Started GET "/authors?variable_type=proxy" for 127.0.0.1 at 2019-06-24 19:55:53 +0100
+Processing by AuthorsController#index as HTML
+  Parameters: {"variable_type"=>"proxy"}
+  Rendering authors/index.html.erb
+  Rendered books/_book.html.erb (0.2ms)
+  Rendered authors/index.html.erb (2.0ms)
+Completed 200 OK in 3ms (Views: 3.0ms)
+
+
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from <top (required)> at /Users/joelmoss/dev/gifted/test/fake_app/fake_app.rb:24)
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 19:58:31 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (3.3ms)
+Completed 500 Internal Server Error in 15ms
+
+
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 19:58:32 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (1.1ms)
+Completed 500 Internal Server Error in 3ms
+
+
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 19:58:32 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (1.0ms)
+Completed 500 Internal Server Error in 3ms
+
+
+Started GET "/authors/1/books/1/error" for 127.0.0.1 at 2019-06-24 19:58:32 +0100
+Processing by BooksController#error as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/error.html.erb
+  Rendered books/error.html.erb (0.4ms)
+Completed 200 OK in 4ms (Views: 3.1ms)
+
+
+Started GET "/authors/1/books/2" for 127.0.0.1 at 2019-06-24 19:58:32 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"2"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (1.5ms)
+Completed 500 Internal Server Error in 18ms
+
+
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 19:58:32 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (1.6ms)
+Completed 500 Internal Server Error in 4ms
+
+
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from <top (required)> at /Users/joelmoss/dev/gifted/test/fake_app/fake_app.rb:24)
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:00:22 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (11.4ms)
+Completed 500 Internal Server Error in 20ms
+
+
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from <top (required)> at /Users/joelmoss/dev/gifted/test/fake_app/fake_app.rb:24)
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:02:20 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (14.3ms)
+Completed 500 Internal Server Error in 26ms
+
+
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from <top (required)> at /Users/joelmoss/dev/gifted/test/fake_app/fake_app.rb:24)
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:11:24 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (10.7ms)
+Completed 500 Internal Server Error in 19ms
+
+
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:11:25 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (8.9ms)
+Completed 500 Internal Server Error in 11ms
+
+
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from <top (required)> at /Users/joelmoss/dev/gifted/test/fake_app/fake_app.rb:24)
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:11:39 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (10.5ms)
+Completed 500 Internal Server Error in 19ms
+
+
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from <top (required)> at /Users/joelmoss/dev/gifted/test/fake_app/fake_app.rb:24)
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:11:49 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (2.9ms)
+Completed 200 OK in 10ms (Views: 5.3ms)
+
+
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from <top (required)> at /Users/joelmoss/dev/gifted/test/fake_app/fake_app.rb:24)
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:11:58 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (3.7ms)
+Completed 200 OK in 14ms (Views: 6.9ms)
+
+
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:11:59 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (0.7ms)
+Completed 200 OK in 3ms (Views: 1.8ms)
+
+
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from <top (required)> at /Users/joelmoss/dev/gifted/test/fake_app/fake_app.rb:24)
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:12:36 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (2.6ms)
+Completed 200 OK in 10ms (Views: 4.9ms)
+
+
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:12:36 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (0.7ms)
+Completed 200 OK in 3ms (Views: 1.7ms)
+
+
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from <top (required)> at /Users/joelmoss/dev/gifted/test/fake_app/fake_app.rb:24)
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:12:53 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (2.5ms)
+Completed 200 OK in 10ms (Views: 4.9ms)
+
+
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:12:53 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (0.6ms)
+Completed 200 OK in 3ms (Views: 1.6ms)
+
+
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from <top (required)> at /Users/joelmoss/dev/gifted/test/fake_app/fake_app.rb:24)
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:13:08 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (2.5ms)
+Completed 200 OK in 10ms (Views: 4.9ms)
+
+
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:13:08 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (0.8ms)
+Completed 200 OK in 3ms (Views: 1.8ms)
+
+
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:13:08 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (0.6ms)
+Completed 200 OK in 2ms (Views: 1.6ms)
+
+
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:13:08 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (0.6ms)
+Completed 200 OK in 3ms (Views: 1.6ms)
+
+
+Started GET "/authors/1/books/1/error" for 127.0.0.1 at 2019-06-24 20:13:08 +0100
+Processing by BooksController#error as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/error.html.erb
+  Rendered books/error.html.erb (0.3ms)
+Completed 200 OK in 3ms (Views: 1.8ms)
+
+
+Started GET "/authors/1/books/2" for 127.0.0.1 at 2019-06-24 20:13:08 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"2"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (0.8ms)
+Completed 200 OK in 3ms (Views: 2.1ms)
+
+
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:13:08 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (0.6ms)
+Completed 200 OK in 3ms (Views: 1.7ms)
+
+
+Started POST "/authors/1/books/1/purchase" for 127.0.0.1 at 2019-06-24 20:13:08 +0100
+Processing by BooksController#purchase as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering book_mailer/thanks.text.erb
+  Rendered book_mailer/thanks.text.erb (0.3ms)
+BookMailer#thanks: processed outbound mail in 192.2ms
+Sent mail to test@example.com (7.2ms)
+Date: Mon, 24 Jun 2019 20:13:09 +0100
+From: nobody@example.com
+To: test@example.com
+Message-ID: <5d1120c520d17_fe2e3ffaecc3202c813e8@Joels-MacBook-Pro.local.mail>
+Subject: Thanks
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for purchasing RHG.
+
+  Rendering books/purchase.html.erb
+  Rendered books/purchase.html.erb (0.2ms)
+Completed 200 OK in 205ms (Views: 3.2ms)
+
+
+DEPRECATION WARNING: `secrets.secret_token` is deprecated in favor of `secret_key_base` and will be removed in Rails 6.0. (called from <top (required)> at /Users/joelmoss/dev/gifted/test/fake_app/fake_app.rb:24)
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movies/show.html.erb
+  Rendered movies/show.html.erb (2.5ms)
+Completed 200 OK in 8ms (Views: 4.3ms)
+
+
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:13:18 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (3.0ms)
+Completed 200 OK in 9ms (Views: 5.1ms)
+
+
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:13:18 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (0.6ms)
+Completed 200 OK in 3ms (Views: 1.6ms)
+
+
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:13:18 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (0.5ms)
+Completed 200 OK in 2ms (Views: 1.5ms)
+
+
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:13:18 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (0.6ms)
+Completed 200 OK in 2ms (Views: 1.5ms)
+
+
+Started GET "/authors/1/books/1/error" for 127.0.0.1 at 2019-06-24 20:13:18 +0100
+Processing by BooksController#error as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/error.html.erb
+  Rendered books/error.html.erb (0.3ms)
+Completed 200 OK in 2ms (Views: 1.3ms)
+
+
+Started GET "/authors/1/books/2" for 127.0.0.1 at 2019-06-24 20:13:18 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"2"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (0.8ms)
+Completed 200 OK in 3ms (Views: 2.1ms)
+
+
+Started GET "/authors/1/books/1" for 127.0.0.1 at 2019-06-24 20:13:18 +0100
+Processing by BooksController#show as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering books/show.html.erb
+  Rendered books/show.html.erb (0.7ms)
+Completed 200 OK in 3ms (Views: 1.7ms)
+
+
+Started POST "/authors/1/books/1/purchase" for 127.0.0.1 at 2019-06-24 20:13:18 +0100
+Processing by BooksController#purchase as HTML
+  Parameters: {"author_id"=>"1", "id"=>"1"}
+  Rendering book_mailer/thanks.text.erb
+  Rendered book_mailer/thanks.text.erb (0.3ms)
+BookMailer#thanks: processed outbound mail in 130.1ms
+Sent mail to test@example.com (5.8ms)
+Date: Mon, 24 Jun 2019 20:13:18 +0100
+From: nobody@example.com
+To: test@example.com
+Message-ID: <5d1120ce76549_fe5d3fecdf83203c2539c@Joels-MacBook-Pro.local.mail>
+Subject: Thanks
+Mime-Version: 1.0
+Content-Type: text/plain;
+ charset=UTF-8
+Content-Transfer-Encoding: 7bit
+
+Thank you for purchasing RHG.
+
+  Rendering books/purchase.html.erb
+  Rendered books/purchase.html.erb (0.2ms)
+Completed 200 OK in 141ms (Views: 3.5ms)
+
+
+Started GET "/authors/1" for 127.0.0.1 at 2019-06-24 20:13:18 +0100
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering authors/show.html.erb
+  Rendered authors/show.html.erb (19.9ms)
+Completed 200 OK in 24ms (Views: 22.0ms)
+
+
+Started GET "/movies/1" for 127.0.0.1 at 2019-06-24 20:13:18 +0100
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movies/show.html.erb
+  Rendered movies/show.html.erb (1.7ms)
+Completed 200 OK in 4ms (Views: 3.5ms)
+
+
+Started GET "/authors/1" for 127.0.0.1 at 2019-06-24 20:13:18 +0100
+Processing by AuthorsController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering authors/show.html.erb
+  Rendered authors/show.html.erb (4.6ms)
+Completed 200 OK in 7ms (Views: 6.0ms)
+
+
+Started GET "/authors/1/books" for 127.0.0.1 at 2019-06-24 20:13:18 +0100
+Processing by BooksController#index as HTML
+  Parameters: {"author_id"=>"1"}
+  Rendering books/index.html.erb
+  Rendered books/index.html.erb (1.3ms)
+Completed 200 OK in 4ms (Views: 2.7ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2019-06-24 20:13:18 +0100
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb
+  Rendered books/_book.html.erb (0.4ms)
+  Rendered authors/index.html.erb (3.7ms)
+Completed 200 OK in 6ms (Views: 5.2ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2019-06-24 20:13:18 +0100
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb
+  Rendered books/_book.html.erb (1.0ms)
+  Rendered authors/index.html.erb (5.1ms)
+Completed 200 OK in 7ms (Views: 6.5ms)
+
+
+Started GET "/authors?variable_type=array" for 127.0.0.1 at 2019-06-24 20:13:18 +0100
+Processing by AuthorsController#index as HTML
+  Parameters: {"variable_type"=>"array"}
+  Rendering authors/index.html.erb
+  Rendered books/_book.html.erb (0.4ms)
+  Rendered authors/index.html.erb (3.4ms)
+Completed 200 OK in 6ms (Views: 4.9ms)
+
+
+Started GET "/authors?variable_type=proxy" for 127.0.0.1 at 2019-06-24 20:13:18 +0100
+Processing by AuthorsController#index as HTML
+  Parameters: {"variable_type"=>"proxy"}
+  Rendering authors/index.html.erb
+  Rendered books/_book.html.erb (0.3ms)
+  Rendered authors/index.html.erb (2.7ms)
+Completed 200 OK in 5ms (Views: 4.0ms)
+
+
+Started GET "/authors?partial=collection" for 127.0.0.1 at 2019-06-24 20:13:18 +0100
+Processing by AuthorsController#index as HTML
+  Parameters: {"partial"=>"collection"}
+  Rendering authors/index.html.erb
+  Rendered collection of templates [0 times] (0.0ms)
+  Rendered collection of books/_book.html.erb [1 times] (0.6ms)
+  Rendered authors/index.html.erb (5.2ms)
+Completed 200 OK in 8ms (Views: 7.2ms)
+
+
+Started GET "/authors" for 127.0.0.1 at 2019-06-24 20:13:18 +0100
+Processing by AuthorsController#index as HTML
+  Rendering authors/index.html.erb
+  Rendered books/_book.html.erb (0.4ms)
+  Rendered authors/index.html.erb (3.6ms)
+Completed 200 OK in 6ms (Views: 5.2ms)
+
+
+Started GET "/authors?partial=locals" for 127.0.0.1 at 2019-06-24 20:13:18 +0100
+Processing by AuthorsController#index as HTML
+  Parameters: {"partial"=>"locals"}
+  Rendering authors/index.html.erb
+  Rendered books/_book_locals.html.erb (0.4ms)
+  Rendered authors/index.html.erb (3.7ms)
+Completed 200 OK in 6ms (Views: 5.0ms)
+
+

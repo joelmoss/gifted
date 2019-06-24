@@ -15,6 +15,11 @@ class ControllerIvarTest < ActionDispatch::IntegrationTest
     assert page.has_content? 'matz'.capitalize
   end
 
+  test 'decorating model scope in ivar with a view' do
+    visit '/authors'
+    assert page.has_content? 'takahashim (admin)'
+  end
+
   test 'decorating model scope in ivar' do
     visit '/authors'
     assert page.has_content? 'takahashim'

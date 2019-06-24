@@ -14,6 +14,16 @@ class ActionViewHelpersTest < ActionDispatch::IntegrationTest
     assert page.has_content? 'Name: Joel'
   end
 
+  test 'calling view instance variables in a decorator view' do
+    visit "/authors/#{@rhg.author.id}/books/#{@rhg.id}"
+    assert page.has_content? 'Name: Joel (admin)'
+  end
+
+  test 'invoking action_view helper method in a decorator view' do
+    visit "/authors/#{@rhg.author.id}/books/#{@rhg.id}"
+    assert page.has_content? 'joe...'
+  end
+
   test 'invoking action_view helper methods' do
     visit "/authors/#{@rhg.author.id}/books/#{@rhg.id}"
     within 'a.title' do

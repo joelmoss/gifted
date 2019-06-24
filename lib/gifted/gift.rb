@@ -21,7 +21,7 @@ module Gifted
 
         if view
           decorator = default_decorator.const_get("#{view.to_s.camelcase}Decorator")
-          decorator.send :include, Gifted::ViewContext unless decorator.is_a?(Class)
+          decorator.send :include, Gifted::ViewHelpers unless decorator.is_a?(Class)
         end
 
         SimpleDelegator.new(self).extend decorator

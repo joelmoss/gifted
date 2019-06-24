@@ -89,6 +89,12 @@ module ApplicationHelper; end
 
 # decorators
 module AuthorDecorator
+  module AdminDecorator
+    def name
+      "#{super} (admin)"
+    end
+  end
+
   def reverse_name
     name.reverse
   end
@@ -98,6 +104,16 @@ module AuthorDecorator
   end
 end
 module BookDecorator
+  module AdminDecorator
+    def truncated_name
+      truncate 'joelmoss', length: 6
+    end
+
+    def name_from_ivar
+      "Name: #{controller.instance_variable_get(:@name)} (admin)"
+    end
+  end
+
   def reverse_title
     title.reverse
   end

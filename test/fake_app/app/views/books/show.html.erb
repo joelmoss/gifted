@@ -1,5 +1,7 @@
 <%= @book.gift.link %>
 <%= @book.gift.cover_image %>
 <%= @book.gift.name_from_ivar %>
+<%= @book.gift(:admin).truncated_name %>
+<%= @book.gift(:admin).name_from_ivar %>
 
 <%= link_to 'purchase', [:purchase, @book.author, @book], method: :post %>
