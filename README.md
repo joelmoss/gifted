@@ -1,6 +1,6 @@
 # Gifted
 
-Simple, yet powerful decorators for Ruby on Rails, inspired (and forked) from [ActiveDecorator](https://github.com/amatsuda/active_decorator). It has the following goals:
+Simple, powerful, and explicit decorators for Ruby on Rails, inspired (and forked) from [ActiveDecorator](https://github.com/amatsuda/active_decorator). It has the following goals:
 
 1. Fast and efficient.
 2. Implicit decorators.

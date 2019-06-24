@@ -114,6 +114,10 @@ module BookDecorator
     image_tag 'cover.png'
   end
 
+  def name_from_ivar
+    "Name: #{controller.instance_variable_get(:@name)}"
+  end
+
   def errata
     poof!
   end
@@ -204,6 +208,7 @@ unless ENV['API']
     end
 
     def show
+      @name = 'Joel'
       @book = Author.find(params[:author_id]).books.find(params[:id])
     end
 

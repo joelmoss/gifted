@@ -9,6 +9,11 @@ class ActionViewHelpersTest < ActionDispatch::IntegrationTest
     @rhg_novel = aamine.books.create! title: 'RHG Novel', type: 'Novel'
   end
 
+  test 'calling view instance variables' do
+    visit "/authors/#{@rhg.author.id}/books/#{@rhg.id}"
+    assert page.has_content? 'Name: Joel'
+  end
+
   test 'invoking action_view helper methods' do
     visit "/authors/#{@rhg.author.id}/books/#{@rhg.id}"
     within 'a.title' do

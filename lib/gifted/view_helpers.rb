@@ -10,5 +10,9 @@ module Gifted
     def respond_to_missing?(method_name, *args)
       Gifted::ViewContext.current.respond_to?(method_name) || super
     end
+
+    def controller
+      @controller ||= Gifted::ViewContext.current.instance_variable_get(:@_controller)
+    end
   end
 end
