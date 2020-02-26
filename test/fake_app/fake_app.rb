@@ -17,6 +17,7 @@ module GiftedTestApp
     config.eager_load = false
     config.action_dispatch.show_exceptions = false
     config.root = File.dirname(__FILE__)
+    config.hosts << "www.example.com"
 
     config.action_mailer.delivery_method = :test
   end
