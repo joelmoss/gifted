@@ -5955,3 +5955,10 @@ Processing by AuthorsController#index as HTML
 Completed 200 OK in 4ms (Views: 3.1ms | Allocations: 2270)
 
 
+Processing by MoviesController#show as HTML
+  Parameters: {"id"=>"1"}
+  Rendering movies/show.html.erb
+  Rendered movies/show.html.erb (Duration: 4.0ms | Allocations: 866)
+Completed 200 OK in 13ms (Views: 6.2ms | Allocations: 3583)
+
+
