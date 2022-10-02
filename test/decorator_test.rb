@@ -2,7 +2,7 @@
 
 require 'test_helper'
 
-class DecoratorTest < Test::Unit::TestCase
+class DecoratorTest < ActiveSupport::TestCase
   test 'it returns the object on decoration' do
     book = Book.new title: 'Boek'
     assert_equal book, Gifted::Decorator.instance.decorate(book)
@@ -41,7 +41,7 @@ class DecoratorTest < Test::Unit::TestCase
   end
 
   test 'decorating Hash decorates its each value' do
-    hash = {some_record: Book.new(title: 'Boek')}
+    hash = { some_record: Book.new(title: 'Boek') }
     assert_equal hash, Gifted::Decorator.instance.decorate(hash)
 
     hash.values.each do |value|

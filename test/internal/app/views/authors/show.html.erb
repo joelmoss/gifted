@@ -1,0 +1,10 @@
+<%= @author.name %>
+<%= @author.gift.capitalized_name %>
+<%= @author.books.first.gift.upcased_title %>
+<%= @author.books.last.gift.upcased_title %>
+<% if Rails.version.to_f >= 4.0 && p = @author.publishers.take %><%= p.gift.upcased_name %><% end %>
+<% if Rails.version.to_f >= 5.1 && p = @author.publishers.second_to_last %><%= p.gift.reversed_name %><% end %>
+<% if p = @author.profile %><%= p.gift.address %><% end %>
+<% if h = @author.profile_history %><%= h.gift.update_date %><% end %>
+<% if m = @author.magazines.first %><%= m.gift.upcased_title %><% end %>
+<% if c = @author.company %><%= c.gift.reverse_name %><% end %>

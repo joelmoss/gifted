@@ -1,8 +1,11 @@
 # frozen_string_literal: true
 
 require 'test_helper'
+require 'capybara/cuprite'
 
-class ActionViewHelpersTest < ActionDispatch::IntegrationTest
+class ActionViewHelpersTest < ActionDispatch::SystemTestCase
+  driven_by :cuprite
+
   setup do
     aamine = Author.create! name: 'aamine'
     @rhg = aamine.books.create! title: 'RHG'
@@ -47,7 +50,7 @@ class ActionViewHelpersTest < ActionDispatch::IntegrationTest
 
   test 'make sure that action_view + action_mailer works' do
     visit "/authors/#{@rhg.author.id}/books/#{@rhg.id}"
-    click_link 'purchase'
+    click_button 'purchase'
     assert page.has_content? 'done'
   end
 end

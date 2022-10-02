@@ -20,24 +20,24 @@ class AssociationIntegrationTest < ActionDispatch::IntegrationTest
   end
 
   test 'decorating associated objects' do
-    visit "/authors/#{@matz.id}"
-    assert page.has_content? 'the world of code'.upcase
-    assert page.has_content? 'the ruby programming language'.upcase
-    if Rails.version.to_f >= 4.0
-      assert page.has_content? 'nikkei linux'.upcase
-    end
-    if Rails.version.to_f >= 5.1
-      assert page.has_content? 'nikkei linux'.reverse
-    end
-    assert page.has_content? 'secret'
-    assert page.has_content? '2017/02/07'
-    assert page.has_content? 'rubima'.upcase
-    assert page.has_content? 'NaCl'.reverse
+    get "/authors/#{@matz.id}"
+
+    assert_match 'the world of code'.upcase, response.body
+    assert_match 'the ruby programming language'.upcase, response.body
+
+    assert_match 'nikkei linux'.upcase, response.body if Rails.version.to_f >= 4.0
+    assert_match 'nikkei linux'.reverse, response.body if Rails.version.to_f >= 5.1
+
+    assert_match 'secret', response.body
+    assert_match '2017/02/07', response.body
+    assert_match 'rubima'.upcase, response.body
+    assert_match 'NaCl'.reverse, response.body
   end
 
   test "decorating associated objects that owner doesn't have decorator" do
     movie = Movie.create! author: @matz
-    visit "/movies/#{movie.id}"
-    assert page.has_content? 'matz'.reverse
+    get "/movies/#{movie.id}"
+
+    assert_match 'matz'.reverse, response.body
   end
 end
