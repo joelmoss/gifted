@@ -16,6 +16,6 @@ Gem::Specification.new do |spec|
   spec.files = Dir['{lib}/**/*', 'CODE_OF_CONDUCT.md', 'README.md', 'LICENSE.txt']
   spec.require_paths = ['lib']
 
-  spec.add_dependency 'activesupport', ['>= 6.1.0', '< 8.0']
-  spec.add_dependency 'railties', ['>= 6.1.0', '< 8.0']
+  spec.add_dependency 'activesupport', ['>= 7.2.0', '< 9.0']
+  spec.add_dependency 'railties', ['>= 7.2.0', '< 9.0']
 end
